@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo-img" src="img/black.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Theme">🌗</button>
+    </header>
+    <main>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <h2>Please fill out the form below and we'll get back to you shortly.</h2>
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2024 BLACNOVA</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nicholas-davis-2629b126a/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/nicholasxdavis" target="_blank">GitHub</a>
+        </div>
+    </footer>
+</body>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    // Here you can add JavaScript to handle form submission, e.g., sending data to a server or displaying a confirmation message.
+    // Example:
+    alert('Message sent!'); // Replace with actual handling logic});
+    </script>
+</html>
