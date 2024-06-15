@@ -264,7 +264,14 @@ footer {
 footer p {
     margin: 10px 0;
 }
-
+[data-theme="dark"] .social-links a {
+    color: #FCD53F;
+    transition: color var(--transition-duration), transform var(--transition-duration);
+}
+[data-theme="dark"] .social-links a:hover {
+    color: #e0bb34;
+    transform: scale(1.1);
+}
 .social-links a {
     margin: 0 10px;
     color: var(--footer-text);
