@@ -74,8 +74,12 @@ nav a {
     transition: background-color var(--transition-duration), transform var(--transition-duration);
 }
 
-nav a:hover {
-    color: var(--background-color);
+[data-theme="light"] nav a:hover {
+    color: #111111;
+    transform: scale(1.1);
+}
+[data-theme="dark"] nav a:hover {
+    color: #d7d8d9;
     transform: scale(1.1);
 }
 
@@ -120,6 +124,7 @@ font-style: normal;
     font-size: 20px;
     opacity: 0.8; /* Adjusted opacity value */
     margin-bottom: 60px;
+    margin-top: -15px;
     max-width: 1000px; /* Use max-width instead of width */
     margin-left: auto; /* Centering the element horizontally */
     margin-right: auto; /* Centering the element horizontally */
@@ -146,19 +151,47 @@ font-style: normal;
     margin-left: auto; /* Centering the element horizontally */
     margin-right: auto; /* Centering the element horizontally */
     margin-bottom: 60px;
+    margin-top: 60px;
+}
+h5 {
+    text-align: center;
+    font-family: "dejavu-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    opacity: 0.8; /* Adjusted opacity value */
+    max-width: 1000px; /* Use max-width instead of width */
+    margin-left: auto; /* Centering the element horizontally */
+    margin-right: auto; /* Centering the element horizontally */
+    margin-bottom: 60px;
+}
+h6 {
+    text-align: center;
+    font-family: "inter-tight-variable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    opacity: 1;
+    max-width: 1000px;
+    margin: -20px auto 0 auto;
+    transition: opacity 1s ease-in-out; /* Smooth fade-out and fade-in */
+    padding-bottom: 50px;
+    margin-top: -35px;
 }
 ul {
     text-align: center;
-    font-family: "dejavu-sans", sans-serif;
-    font-weight: 20;
+    justify-content: space-between;
+    font-family: "inter-tight-variable", sans-serif;   
     font-style: italic;
-    font-style: normal;
     margin-bottom: -35px;
     font-size: 15px;
     opacity: 0.8; /* Adjusted opacity value */
     max-width: 1000px; /* Use max-width instead of width */
     margin-left: auto; /* Centering the element horizontally */
     margin-right: auto; /* Centering the element horizontally */
+}
+ul li {
+    padding: 10px; /* Add padding around each list item */
 }
 
 .projects-grid {
@@ -253,7 +286,6 @@ ul {
 }
 
 footer {
-    margin-top: 30px;
     text-align: center;
     padding: 20px;
     background-color: var(--footer-background);
@@ -304,12 +336,13 @@ social-links a:hover {
 #about {
             text-align: center;
         }
-        #about img, #mission img, #united img, #creative img {
+        #about img, #mission img, #united img, #creative img, #indev img {
             display: block;
             margin: 0 auto 20px;
             max-width: 60px;
             height: auto;
             margin-bottom: -25px
+            animation: slideUp 0.5s ease-in-out;
         }
         #quote img {
             display: block;
@@ -317,6 +350,7 @@ social-links a:hover {
             max-width: 60px;
             height: auto;
             margin-bottom: -25px
+            animation: slideUp 0.5s ease-in-out;
         }
         #home img {
             display: block;
@@ -341,6 +375,7 @@ social-links a:hover {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.5s ease-in-out;
 }
 .form-group {
     margin-bottom: 20px;
@@ -424,3 +459,69 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #e0bb34;
 }
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+[data-theme="light"] .service-item p {
+    color: var(--text-color);
+}
+.service-showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform var(--transition-duration), background-color var(--transition-duration);
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.service-item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+}
+
+.service-item p {
+    color: var(--secondary-color);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+#indev {
+            margin-top: 130px;
+        }
+button[type="login"] {
+    background-color: #FCD53F;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust button spacing */
+    
+    /* Center horizontally */
+    display: block;
+    margin: 0 auto;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+        button[type="login"]:hover {
+            background-color: #e0bb34;
+        }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blacnova's Homepage</title>
+    <title>Blacnova</title>
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/script.js"></script>
     <link rel="icon" href="img/icon.png" type="image/png">
@@ -15,93 +15,24 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Contact</li>
             </ul>
         </nav>
         <button id="theme-toggle" aria-label="Toggle Theme">🌗</button>
     </header>
     <main>
-    <section id="home">
-        <h1>Homepage</h1>
-        <h2>Join us and experience the best we have to offer.</h2>
+    <section id="indev">
+            <img src="img/indev.svg" alt="Development Image">
+            <h1>We are in development.</h1>
+            <h2>Like always we appreciate your patience!</h2>
+        </section>
+    <section id="print">
+        <h5>You can reach us directly at <a href="mailto:contact@blacnova.store">contact@blacnova.store<br>Our office hours are 7am to 7pm Pacific Time, Monday through Friday.</a></h5>
+        <button type="login">Login</button>
     </section>
-        <section id="quote">
-    <img src="img/quote.svg" alt="Quote Image">
-    <h1>Grab a free quote!</h1>
-    <h2>Request a quote today and discover the pinnacle of our services.</h2>
-
-    <form id="quote-form" action="submit_quote.php" method="post" class="contact-form">
-        <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="phone">Your Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-
-        <div class="form-group">
-            <label for="project">Tell us about your project:</label>
-            <textarea id="project" name="project" rows="4" required></textarea>
-        </div>
-
-        <button type="submit">Get My Quote</button>
-    </form>
-</section>
-
-<section id="about">
-    <img src="img/about.svg" alt="About Us Image">
-    <h1>About Us</h1>
-    <h2>Welcome to Blacnova: Where Creativity Meets Functionality in the Digital World
-    At Blacnova, we are a dynamic collective of freelance developers, graphic artists, and social marketing professionals dedicated to crafting bespoke digital experiences. Our team is driven by a passion for innovation and a commitment to excellence, specializing in creating custom-tailored websites that reflect our clients' unique visions.</h2>
-    <h2>Established just over a year ago, Blacnova has already built an impressive portfolio of successful projects and commissions. Our expertise spans web development, design, and digital marketing, demonstrating our ability to deliver high-quality solutions that meet diverse client needs.</h2>
-    <h2>Our small but talented team brings together a variety of skills and perspectives, ensuring that we provide cutting-edge solutions that elevate brands and drive online growth. At Blacnova, we turn creative ideas into functional realities, delivering exceptional digital experiences that make a lasting impact.</h2>
-</section>
-    <section id="mission">
-        <img src="img/mission.svg" alt="Our Mission Image">
-        <h1>Our Mission</h1>
-        <h2>Our mission is to provide exceptional services and solutions that elevate our clients' success. We strive to be at the forefront of technology and creativity, ensuring that every project we undertake resonates with quality and impact.</h2>
-        <h2>We believe in the power of collaboration and innovation. Our team works closely with each client to understand their unique needs and goals, crafting tailored strategies that drive results. From the initial concept to the final implementation, we ensure every detail is meticulously planned and executed to perfection.</h2>
-        <h2>Our commitment to excellence means we continuously seek out the latest advancements in technology and design, allowing us to offer cutting-edge solutions that stand out in a competitive digital landscape. We pride ourselves on our ability to adapt and evolve, ensuring that our clients always receive the most relevant and effective services.</h2>
-        <h2>Join us and experience the difference that a dedicated, innovative, and client-focused team can make. Let us help you transform your vision into reality and achieve new heights of success.</h2>
-    </section>
-    <section id="united">
-        <img src="img/united.svg" alt="Untied Team Image">
-        <h1>Teamwork</h1>
-        <h3>At Blacnova, we believe in the power of teamwork. Our versatile teams, comprising programmers, designers, engineers, and marketing professionals, collaborate closely on every project to ensure the best possible outcomes.</h3>
-        <h3>Why Teamwork Matters:</h3>
-        <ul>
-            <li><i><strong>Innovative Solutions:</strong> Diverse perspectives lead to innovative solutions that exceed expectations.</i></li>
-            <li><i><strong>Comprehensive Approach:</strong> From idea to execution, our multidisciplinary teams bring holistic insights to every project.</i></li>
-            <li><i><strong>Efficient Problem-Solving:</strong> Collaborative efforts streamline complex challenges for swift resolutions.</i></li>
-            <li><i><strong>Creative Synergy:</strong> Varied viewpoints inspire creativity and drive groundbreaking ideas.</i></li>
-            <li><i><strong>Seamless Integration:</strong> Departments work in sync to deliver cohesive, high-quality results.</i></li>
-            <h4>For us, teamwork is foundational. Together, we achieve more, innovate faster, and deliver exceptional results for our clients and partners.</h4>
-        </ul>
-    </section>
-    <section id="creative">
-        <img src="img/creative.svg" alt="Creative Image">
-        <h1>Where creativity thrives.</h1>
-        <h3>We believe that creativity fuels innovation and drives us to explore new possibilities.</h3>
-        <h3>Here’s how it thrives in our environment:</h3>
-        <ul>
-            <li><strong>Freedom to Explore:</strong> Empowered to explore new ideas and approaches without fear of failure.</li>
-            <li><strong>Cross-Pollination of Ideas:</strong> Diverse teams spark creative synergies through unique perspectives.</li>
-            <li><strong>Support for Experimentation:</strong> Resources and encouragement for prototyping foster continuous innovation.</li>
-            <li><strong>Open Communication:</strong> Transparent channels ensure ideas flow freely across teams.</li>
-            <li><strong>Embrace of Risk-Taking:</strong> Encouraging calculated risk-taking in pursuit of innovative ideas.</li>
-            <li><strong>Time for Exploration:</strong> Dedicated time for research and blue-sky thinking outside project deadlines.</li>
-        </ul>
-    </section>
-    </main>
+</main>
     <footer>
         <p>&copy; 2024 BLACNOVA</p>
         <div class="social-links">
