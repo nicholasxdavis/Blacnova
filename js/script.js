@@ -30,5 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function updateLogo() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const logoImg = document.getElementById('logo-img');
+    const infoImg = document.getElementById('info-img'); // Ensure this matches the id in the HTML
     logoImg.src = currentTheme === 'dark' ? 'img/white.png' : 'img/black.png';
+    infoImg.src = currentTheme === 'dark' ? 'img/bcard/darkinfo.svg' : 'img/bcard/lightinfo.svg';
 }

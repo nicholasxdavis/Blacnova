@@ -7,52 +7,52 @@
     <title>Blacnova's Homepage</title>
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/script.js"></script>
+    <script defer src="js/video.js"></script>
     <link rel="icon" href="img/icon.png" type="image/png">
 </head>
-<header>
+<body>
+    <header>
         <div class="logo">
             <img id="logo-img" src="img/black.png" alt="Logo">
         </div>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="bcards.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <button id="theme-toggle" aria-label="Toggle Theme">🌗</button>
     </header>
-<body>
     <main>
         <section id="home">
-    <h1>Homepage</h1>
-    <h2>Join us and experience the best we have to offer.</h2>
-    <h6 id="testimonial">"Testimonials print example, testimonials print example." - Example, 2023.</h6>
-    <video id="homepage-video" src="https://github.com/nicholasxdavis/nicholasxdavis.github.io/raw/main/img/head.mp4" type="video/mp4" autoplay muted loop>
-        Your browser does not support the video tag.
-    </video>
-</section>
-
-
+            <h1>Homepage</h1>
+            <h2>Join us and experience the best we have to offer.</h2>
+            <h6 id="testimonial">"Testimonials print example, testimonials print example." - Example, 2023.</h6>
+            <video id="homepage-video" src="img/head.mp4" autoplay muted loop>
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
         <section id="services">
-    <h1>Our Services</h1>
-    <h2>Discover what we have to offer and how we can exceed your expectations.</h2>
-    <div class="service-showcase">
-        <div class="service-item">
-            <h3>Web Development</h3>
-            <p>User-friendly websites tailored to your business needs.</p>
-        </div>
-        <div class="service-item">
-            <h3>Graphic Design</h3>
-            <p>Elevate your brand with captivating visuals that resonate with your audience.</p>
-        </div>
-        <div class="service-item">
-            <h3>Digital Marketing</h3>
-            <p>Drive growth and engagement with targeted strategies.</p>
-        </div>
-        <!-- Add more services as needed -->
-    </div>
-</section>
+            <h1>Our Services</h1>
+            <h2>Discover what we have to offer and how we can exceed your expectations.</h2>
+            <div class="service-showcase">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>User-friendly websites tailored to your business needs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Graphic Design</h3>
+                    <p>Elevate your brand with captivating visuals that resonate with your audience.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Digital Marketing</h3>
+                    <p>Drive growth and engagement with targeted strategies.</p>
+                </div>
+            </div>
+        </section>
+        
         <section id="quote">
             <img src="img/quote.svg" alt="Quote Image">
             <h1>Grab a free quote!</h1>
@@ -77,6 +77,7 @@
                 <button type="submit">Get My Quote</button>
             </form>
         </section>
+        
         <section id="about">
             <img src="img/about.svg" alt="About Us Image">
             <h1>About Us</h1>
@@ -85,6 +86,47 @@
             <h2>Established just over a year ago, Blacnova has already built an impressive portfolio of successful projects and commissions. Our expertise spans web development, design, and digital marketing, demonstrating our ability to deliver high-quality solutions that meet diverse client needs.</h2>
             <h2>Our small but talented team brings together a variety of skills and perspectives, ensuring that we provide cutting-edge solutions that elevate brands and drive online growth. At Blacnova, we turn creative ideas into functional realities, delivering exceptional digital experiences that make a lasting impact.</h2>
         </section>
+        
+        <section id="projects">
+            <h1>Projects Showcase:</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <img src="img/nova.svg" alt="Nova's File Converter Icon">
+                    </div>
+                    <div class="project-info">
+                        <h2>Nova's File Converter</h2>
+                        <p>Nova Converter is an all-in-one web-based solution designed to seamlessly convert image, audio, and video files into various formats. It is crafted to cater to the needs of professionals and everyday users who require a reliable, fast, and user-friendly tool for media conversion.</p>
+                        <a href="indev.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <img src="img/paint.svg" alt="Nova's Paint Icon">
+                    </div>
+                    <div class="project-info">
+                        <h2>Nova's Paint</h2>
+                        <p>Nova's Paint is a powerful online paint application, open-source and free of charge for children of all ages, providing a wide range of creative tools and features to unleash artistic expression, making it an ideal platform for nurturing young talents and exploring endless possibilities in digital art.</p>
+                        <a href="indev.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <img src="img/math.svg" alt="Nova's Fastmath Icon">
+                    </div>
+                    <div class="project-info">
+                        <h2>Nova's Fastmath</h2>
+                        <p>Nova's Fast Math is an online math game suitable for all ages, offering a range of puzzles and challenges to enhance math skills. Players can enjoy interactive features like solving puzzles, racing against the clock, and advancing through levels covering basic addition to advanced equations.</p>
+                        <a href="indev.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="morec">
+            <button id="more" onclick="window.location.href='projects.html'">View all</button>
+        </section>
+        
         <section id="mission">
             <img src="img/mission.svg" alt="Our Mission Image">
             <h1>Our Mission</h1>
@@ -93,6 +135,7 @@
             <h2>Our commitment to excellence means we continuously seek out the latest advancements in technology and design, allowing us to offer cutting-edge solutions that stand out in a competitive digital landscape. We pride ourselves on our ability to adapt and evolve, ensuring that our clients always receive the most relevant and effective services.</h2>
             <h2>Join us and experience the difference that a dedicated, innovative, and client-focused team can make. Let us help you transform your vision into reality and achieve new heights of success.</h2>
         </section>
+        
         <section id="united">
             <img src="img/united.svg" alt="Untied Team Image">
             <h1>Teamwork</h1>
@@ -107,6 +150,7 @@
             </ul>
             <h4>For us, teamwork is foundational. Together, we achieve more, innovate faster, and deliver exceptional results for our clients and partners.</h4>
         </section>
+        
         <section id="creative">
             <img src="img/creative.svg" alt="Creative Image">
             <h1>Where creativity thrives.</h1>
@@ -133,26 +177,25 @@
     </footer>
     <script>
         const testimonials = [
-    '"Their digital marketing strategies are results-driven. We\'ve seen significant growth in our online presence." - Momentum Marketing Agency, 2024.',
-    '"Transformed our digital strategy. Their websites are both functional and beautiful." - Genesis Solutions Ltd., 2024.',
-    '"They have a keen eye for detail. Their designs are visually stunning." - Chroma Studios Ltd., 2024.',
-    '"Creative and impactful designs. They helped us stand out in a crowded market." - Fusion Marketing Solutions, 2023.',
-    '"They delivered beyond our expectations. Their expertise is evident in every detail." - Nexus Innovations Group, 2023.',
-    '"Efficient and effective service. They revamped our online presence seamlessly." - Summit Solutions Co., 2024.',
-    '"Their SEO expertise is unmatched. They\'ve helped us rank higher on search engines." - Search Smart Inc., 2023.',
-    '"Innovative and reliable partner. Their designs reflect our brand perfectly." - Horizon Technologies Ltd., 2023.',
-    '"They\'re experts in digital outreach. Their campaigns effectively engage our audience." - Amplify Digital Solutions, 2023.',
-    '"Exceptional craftsmanship in web design. They tailored a solution just for us." - Pinnacle Partners Ltd., 2023.',
-    '"They understand design psychology. Their work resonates well with our target audience." - Graphix Experts Group, 2023.',
-    '"Professional and imaginative. Their designs exceeded our expectations." - Visionary Brands Co., 2023.',
-    '"Their graphic design work is top-notch. They captured our brand essence perfectly." - Stellar Designs Inc., 2024.',
-    '"Responsive and creative. They brought our vision to life online." - Evolve Dynamics Corp., 2023',
-    '"They\'re proactive and strategic. Their digital marketing efforts have boosted our sales." - Impact Marketing Consultancy, 2024.',
-    '"They\'re experts in digital outreach. Their campaigns effectively engage our audience." - Amplify Digital Solutions, 2023.',
-    '"They deliver measurable results. Their PPC campaigns have driven quality leads to our website." - Click Catalyst Agency, 2023.',
-    '"They understand design psychology. Their work resonates well with our target audience." - Graphix Experts Group, 2023.',
-    '"Efficient and effective service. They revamped our online presence seamlessly." - Summit Solutions Co., 2024.'
-];
+            '"Their digital marketing strategies are results-driven. We\'ve seen significant growth in our online presence." - Momentum Marketing Agency, 2024.',
+            '"Transformed our digital strategy. Their websites are both functional and beautiful." - Genesis Solutions Ltd., 2024.',
+            '"They have a keen eye for detail. Their designs are visually stunning." - Chroma Studios Ltd., 2024.',
+            '"Creative and impactful designs. They helped us stand out in a crowded market." - Fusion Marketing Solutions, 2023.',
+            '"They delivered beyond our expectations. Their expertise is evident in every detail." - Nexus Innovations Group, 2023.',
+            '"Efficient and effective service. They revamped our online presence seamlessly." - Summit Solutions Co., 2024.',
+            '"Their SEO expertise is unmatched. They\'ve helped us rank higher on search engines." - Search Smart Inc., 2023.',
+            '"Innovative and reliable partner. Their designs reflect our brand perfectly." - Horizon Technologies Ltd., 2023.',
+            '"They\'re experts in digital outreach. Their campaigns effectively engage our audience." - Amplify Digital Solutions, 2023.',
+            '"Exceptional craftsmanship in web design. They tailored a solution just for us." - Pinnacle Partners Ltd., 2023.',
+            '"They understand design psychology. Their work resonates well with our target audience." - Graphix Experts Group, 2023.',
+            '"Professional and imaginative. Their designs exceeded our expectations." - Visionary Brands Co., 2023.',
+            '"Their graphic design work is top-notch. They captured our brand essence perfectly." - Stellar Designs Inc., 2024.',
+            '"Responsive and creative. They brought our vision to life online." - Evolve Dynamics Corp., 2023.',
+            '"They\'re proactive and strategic. Their digital marketing efforts have boosted our sales." - Impact Marketing Consultancy, 2024.',
+            '"They deliver measurable results. Their PPC campaigns have driven quality leads to our website." - Click Catalyst Agency, 2023.',
+            '"They understand design psychology. Their work resonates well with our target audience." - Graphix Experts Group, 2023.',
+            '"Efficient and effective service. They revamped our online presence seamlessly." - Summit Solutions Co., 2024.'
+        ];
 
         let currentIndex = 0;
 
