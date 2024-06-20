@@ -382,13 +382,6 @@ social-links a:hover {
             margin-bottom: -25px
             animation: slideUp 0.5s ease-in-out;
         }
-        #home img {
-            display: block;
-            margin: 0 auto 20px;
-            max-width: 40px;
-            height: auto;
-            margin-bottom: -15px
-        }
 /* Form styling */
 #contact {
     text-align: center;
