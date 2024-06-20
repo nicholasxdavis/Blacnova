@@ -34,3 +34,9 @@ function updateLogo() {
     logoImg.src = currentTheme === 'dark' ? 'img/white.png' : 'img/black.png';
     infoImg.src = currentTheme === 'dark' ? 'img/bcard/darkinfo.svg' : 'img/bcard/lightinfo.svg';
 }
+
+function updateLogo2() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const info2Img = document.getElementById('info2-img'); // Ensure this matches the id in the HTML
+    info2Img.src = currentTheme === 'dark' ? 'img/flyers/darkflyer.svg' : 'img/flyers/lightflyer.svg';
+}

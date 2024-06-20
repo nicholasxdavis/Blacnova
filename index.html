@@ -12,24 +12,36 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img id="logo-img" src="img/black.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="bcards.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <button id="theme-toggle" aria-label="Toggle Theme">🌗</button>
-    </header>
+    <div class="logo">
+        <img id="logo-img" src="img/black.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="bcards.html" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="service1.html">Web Development</a>
+                    <a href="service2.html">Graphic Design</a>
+                    <a href="service3.html">Digital Marketing</a>
+                    <a href="service3.html">Server Hosting</a>
+                    <a href="service3.html">Project Development</a>
+                    <a href="service3.html">API Integration</a>
+                    <a href="service3.html">Analytics and Reporting</a>
+                    <a href="service3.html">Product Photography</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle Theme">🌗</button>
+</header>
     <main>
         <section id="home">
             <h1>Homepage</h1>
             <h2>Join us and experience the best we have to offer.</h2>
             <h6 id="testimonial">"Testimonials print example, testimonials print example." - Example, 2023.</h6>
-            <video id="homepage-video" src="img/head.mp4" autoplay muted loop>
+            <video id="homepage-video" src="img/head.mp4" type="video/mp4" autoplay muted loop>
                 Your browser does not support the video tag.
             </video>
         </section>
@@ -50,6 +62,27 @@
                     <h3>Digital Marketing</h3>
                     <p>Drive growth and engagement with targeted strategies.</p>
                 </div>
+                <div class="service-item">
+                    <h3>Server Hosting</h3>
+                    <p>Ensure secure, reliable server hosting solutions tailored to your business needs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Project Development</h3>
+                    <p>From concept to deployment, ensuring quality and deadlines</p>
+                </div>
+                <div class="service-item">
+                    <h3>API Integration</h3>
+                    <p>Streamline connectivity with optimized API integration solutions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Analytics and Reporting</h3>
+                    <p>Track, analyze, and optimize with data-driven insights and customized reporting.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Product Photography</h3>
+                    <p>Professional product photography that meets your visual needs.</p>
+                </div>
+
             </div>
         </section>
         
