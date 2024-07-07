@@ -80,13 +80,15 @@ header nav ul li .dropdown-content {
     background-color: var(--secondary-color);
     min-width: 160px;
     z-index: 1;
-    border-radius: 8px;
+    margin-left: -50px;
+    margin-top: 8px;
 }
 
 header nav ul li .dropdown-content a {
     color: var(--text-color);
     padding: 12px 16px;
     text-decoration: none;
+    outline: solid 1px var(--secondary-color);
     display: block;
     text-align: left;
 }
@@ -100,11 +102,9 @@ header nav ul li:hover .dropdown-content {
 }
 [data-theme="light"] .dropdown-content {
     background-color: #DDDDDD;
-    outline: solid 2px;
 }
 [data-theme="dark"] .dropdown-content {
     background-color: var(--footer-background);
-    outline: solid 2px var(--secondary-color);
 }
 [data-theme="light"] nav a:hover {
     color: #111111;
